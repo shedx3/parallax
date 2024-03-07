@@ -1,0 +1,12 @@
+<div class="main" *ngFor="let blog of response">
+  <div>
+    <div>
+      <img src="../assets/plus.svg" alt="my name" />
+    </div>
+
+    <div>
+      <h2>{{ blog.title }}</h2>
+      <p>{{ blog.body | truncate : 10 }}</p>
+    </div>
+  </div>
+</div>
